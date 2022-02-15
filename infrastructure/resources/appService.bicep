@@ -9,8 +9,8 @@ resource plan 'Microsoft.Web/serverfarms@2021-02-01' = {
   name: 'plan-badadvisor-${environment}-${resourcePostfix}'
   location: resourceGroup().location
   sku: {
-    tier: 'Standard'
-    name: 'S1'
+    tier: 'Basic'
+    name: 'B1'
   }
   kind: 'linux'
   properties: {
