@@ -8,3 +8,11 @@ module storageAccount 'resources/storageAccount.bicep' = {
     resourcePostfix: resourcePostfix
   }
 }
+
+module appSevice 'resources/appService.bicep' = {
+  name: 'appSevice-deployment'
+  params: {
+    environment: environment
+    resourcePostfix: resourcePostfix
+  }
+}
